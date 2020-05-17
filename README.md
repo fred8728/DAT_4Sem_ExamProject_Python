@@ -1,7 +1,7 @@
-# Python Eksamensprojekt 2020
+## Python Eksamensprojekt 2020
 
 
-## Problemformulering:
+### Problemformulering:
 Corona-virusset har i løbet af 3-4 måneder udviklet sig til at være en pandemi. Hele verdenen er påvirket og det kan være svært at danne sig et overblik over hvad der sker på det globale plan. Vores projekt vil forsøge at hente data om corona fra internettet og skabe et overblik over hele situationen. Vi regner med at bruge data om bl.a. lande, kontinenter, corona-cases, døde, datoer, testede og total befolkning. 
 
 ```bash
