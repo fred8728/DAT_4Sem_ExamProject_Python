@@ -1,3 +1,5 @@
+## remove new cases 
+
 #!flask/bin/python
 from flask import Flask, jsonify, abort, request
 #import pymysql
@@ -9,7 +11,7 @@ app = Flask(__name__)
 #http://127.0.0.1:5000/corona/api/all
 @app.route('/corona/api/all', methods=['GET'])
 def get_all():
-    connection = mysql.connector.connect(host='localhost', port=3306, database='pythonexam', user='dev',password="ax2")
+    connection = mysql.connector.connect(host='localhost', port=3307, database='pythonexam', user='dev',password="ax2")
     cursor = connection.cursor()
     query = ("SELECT country, total_cases, New_cases, Total_deaths, New_deaths, Total_recov from corona20200517")
     cursor.execute(query)
@@ -29,10 +31,11 @@ def get_all():
     cursor.close()
     connection.close()
     return jsonify({'tasks': tasks})
+    
 #http://127.0.0.1:5000/corona/api/country/USA
 @app.route('/corona/api/country/<string:name>', methods=['GET'])
 def get_countryByName(name):
-    connection = mysql.connector.connect(host='localhost', port=3306, database='pythonexam', user='dev',password="ax2")
+    connection = mysql.connector.connect(host='localhost', port=3307, database='pythonexam', user='dev',password="ax2")
     cursor = connection.cursor()
     query = ("SELECT country, total_cases, New_cases, Total_deaths, New_deaths, Total_recov from corona20200517 WHERE country = %s")
     where = name, 
