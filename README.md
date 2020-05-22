@@ -24,3 +24,11 @@ Finde den rette data at bearbejde og putte i MySQL database.
 NLP, vi har ikke arbejdet med det før.
 Flask server.
 ```
+
+### Gruppe medlemmer:
+```bash
+•	Emil Skovbo
+•	Frederik Løwe Lassen
+•	Frederikke Simone Koefoed Nilsson 
+```
+
